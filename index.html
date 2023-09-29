@@ -38,9 +38,30 @@
                     <h5>Hi I'm <span class="">Frontend Developer</span></h5>
                     <h1>Ashiqu Ali</h1>
                     <p>Final year software engineering student,Flutter enthusiast, skilled in cross-platform mobile app development. Check out my portfolio for projects showcasing hands-on expertise and a passion for creating intuitive user experiences.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn">Download Resume</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        // Button click show hide navbar
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click",function(){
+            this.clasList.toggle("click");
+            nav.classList.toggle("open")
+        })
+    </script>
 </body>
 </html>
